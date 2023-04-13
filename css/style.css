@@ -1,0 +1,173 @@
+/*<<<Fonts>>>*/
+@font-face {
+  font-family: soraye;
+  src: url(../font/A_Soraya.ttf);
+}
+@font-face {
+  font-family: english;
+  src: url(../font/Monten.ttf);
+}
+@font-face {
+  font-family: yekan;
+  src: url(../font/Yekan.ttf);
+}
+@media screen and (min-width: 800px) {
+  h2 {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  h4{
+    font-size:1.3rem;
+  }
+}
+:root {
+  --clr-primary: #0b7d9f;
+  --clr-primary-light: #7edffc;
+  --clr-primary-dark: #174958;
+  --clr-grey: #102a42;
+  --clr-grey-1: #617d98;
+  --clr-grey-2: #95a3af;
+  --fot-white: #fff;
+  --bor-rad: 0.6rem;
+  --transision: all 0.5s linear;
+  --font-english: english;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: yekan;
+}
+body {
+  background-color: var(--clr-primary);
+  color: rgb(0, 0, 0);
+  text-align: right;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 1.6rem;
+}
+h2 {
+  font-size: 1.7rem;
+}
+h4{
+    font-size: 1rem;
+}
+.btn {
+  color: var(--fot-white);
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-primary);
+  border-radius: var(--bor-rad);
+  font-family: yekan;
+  transition: var(--transision);
+}
+.btn:hover {
+  background-color: var(--clr-primary-light);
+  color: rgb(0, 0, 0);
+}
+/*<<<Header>>>*/
+header {
+  margin-top: -2rem;
+  height: 100vh;
+  background: linear-gradient(#00000099, #00000099),
+    url(../img/pexels-amar-preciado-16230538.jpg) center/cover no-repeat fixed;
+  position: relative;
+}
+
+.header-content {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.header-h1 {
+  color: var(--clr-primary);
+  margin-bottom: 1rem;
+  font-family: var(--font-english);
+}
+.header-h2 {
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.btn-header {
+  font-size: 1.3rem;
+  outline: 0.13rem solid var(--clr-primary-dark);
+  outline-offset: 0.25rem;
+  padding: 0.75rem 1.25rem;
+}
+/* content divider */
+.content-divider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to right,
+    var(--clr-primary),
+    var(--clr-primary-light),
+    var(--clr-primary)
+  );
+}
+/* Categories */
+.features {
+    background: var(--clr-grey-10);
+}
+
+.feature {
+    text-align: center;
+    padding:2.5rem 0;
+    transition:var(--transision);
+    height:20.7rem;
+}
+.feature:hover{
+    background-color: var(--clr-primary-light);
+    box-shadow:0 3px 0 var(--clr-primary-dark);
+}
+.feature:hover .feature-icon{
+    transform:translateY(-10px);
+
+}
+.feature-icon {
+    margin-bottom: 1.25rem;
+    display: inline-block;
+    width: 8rem;
+    color: var(--clr-primary);
+    transition: var(--transision);
+}
+
+.feature-title {
+    margin-bottom: 1rem;
+}
+.feature-text {
+    margin: 0 auto;
+}
+.paw span img{
+    margin-top:4.3rem;
+}
+@media screen and (min-width:576px){
+    .feature{
+        float: right;
+        width: 33%;
+    }
+    .paw span img{
+        margin-bottom: 1.7rem;
+    }
+    .shocker{
+        margin-top:0.8rem;
+    }
+    .shocker span img{
+        margin-top:1.9rem;
+    }
+    .knife span img{
+        margin-right:3rem;
+    }
+}
+.feature {
+    margin-top:0;
+}
+/* Categories */
